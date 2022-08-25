@@ -9,7 +9,7 @@ from pathlib import Path
 from fabric.api import put, run, env
 env.hosts = ['52.204.151.72', '3.90.36.230']
 env.user = "ubuntu"
-env.key_filename=['./my_ssh_private_key']
+env.key_filename = ['./my_ssh_private_key']
 
 
 def do_deploy(archive_path):
