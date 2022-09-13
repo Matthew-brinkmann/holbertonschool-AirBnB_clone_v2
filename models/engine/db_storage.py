@@ -54,8 +54,9 @@ class DBStorage:
             for key, value in adjClassDict.items():
                 try:
                     dbObjects = self.__session.query(value).all()
-                except Exception:
+                except Exception as e:
                     print("skipping")
+                    print("********\n{}\n********".format(e))
                     continue
                 for obj in dbObjects:
                     key = obj.__class__.__name__ + '.' + obj.id
