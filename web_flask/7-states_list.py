@@ -25,7 +25,7 @@ def teardown_db(exception):
 
 
 @app.route('/states_list', strict_slashes=False)
-def conditional_templating(n=None):
+def statesList(n=None):
     """checking input data using templating"""
     return render_template('7-states_list.html',
                            states=storage.all("State"))

@@ -26,8 +26,8 @@ def teardown_db(exception):
     storage.close()
 
 
-@app.route('/states_list', strict_slashes=False)
-def conditional_templating(n=None):
+@app.route('/cities_by_states', strict_slashes=False)
+def citiesByState(n=None):
     """checking input data using templating"""
     return render_template('8-cities_by_states.html',
                            states=storage.all("State"))
