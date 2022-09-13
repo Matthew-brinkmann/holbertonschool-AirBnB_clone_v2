@@ -29,16 +29,19 @@
 }
 
 .popover {
-	margin: 0;
+	list-style-type: none;
 	display: none;
-	position: absolute;
-	max-height: 300px;
-	overflow-y: scroll;
 	background-color: #FAFAFA;
-	width: 25%;
-	top: 100%;
+	width: 100%;
+
+	margin-left: -1px;
+	margin-top: 8px;
+	padding: 25px 0px;
+
 	border: 1px solid #DDDDDD;
 	border-radius: 4px;
+	max-height: 300px;
+	overflow-y: scroll;
 }
 
 .locations:hover .popover {
