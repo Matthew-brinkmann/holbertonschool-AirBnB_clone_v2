@@ -68,8 +68,6 @@ class DBStorage:
                 for obj in dbObjects:
                     key = obj.__class__.__name__ + '.' + obj.id
                     new_dict[key] = obj
-            else:
-                print("cls {} not in classes".format(cls))
         return new_dict
 
     def new(self, obj):
